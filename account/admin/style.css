@@ -1,0 +1,195 @@
+@font-face {
+    font-family: "nulshock" ;
+    src: url('nulshock\ bd.ttf') format('truetype');
+}
+
+:root {
+    --primary: #37506c;
+    --background-primary: #40C0C9;
+    --background-secondary: #59c3ca;
+    --backy: #f6f5f6;
+    --additional: #fC5286;
+  }
+  
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "nulshock", sans-serif;
+    background-image: url(../../assets/img/portfolio/polosan.jpg);background-position: center;
+    /* background: linear-gradient(to bottom, #29b3d7, #522767, #ff116b); */
+}
+
+.main{
+    width: 350px;
+    height: 500px;
+    background: #37536e;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 5px 20px 50px #000;
+}
+
+#chk{
+    display: none;
+}
+
+.logo{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+img{
+    margin: auto;
+}
+
+.login img{
+    transform: translateY(7px);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
+}
+
+.logo img{
+    animation-name: rgb;
+    animation-duration: 11s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rgb {
+    0% {
+        border: 5px solid white;
+    }
+    10% {
+        border: 5px solid sienna;
+    }
+    20% {
+        border: 5px solid forestgreen;  
+    }
+    50% {
+        border: 5px solid darkmagenta;
+    }
+    40% {
+        border: 5px solid darkcyan;
+    }
+    50% {
+        border: 5px solid crimson;
+    }
+    60% {
+        border: 5px solid darkorange;
+    }
+    70% {
+        border: 5px solid deeppink;
+    }
+    80% {
+        border: 5px solid navy;
+    }
+    90% {
+        border: 5px solid darkgoldenrod;
+    }
+    100% {
+        border: 5px solid rgb(255, 255, 255);
+      }
+    }
+
+label{
+    color: #fff;
+    font-size: 2.5em;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    margin: 60px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+.logo label{
+    animation-name: underline;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes underline {
+    0% {
+        text-decoration: underline;
+    }
+  
+    50% {
+        text-decoration: none;
+    }
+
+    100% {
+        text-decoration: underline;
+      }
+    }
+
+input{
+    width: 60%;
+    height: 20px;
+    background: #e0dede;
+    justify-content: center;
+    display: flex;
+    margin: 20px auto;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+button{
+    width: 60%;
+    height: 40px;
+    margin: 10px auto;
+    justify-content: center;
+    display: block;
+    color: #fff;
+    background: #40bec8;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    transition: .2s ease-in;
+    cursor: pointer;
+}
+
+button:hover{
+    background: #6d44b8;
+}
+
+.login{
+    height: 460px;
+    background: #eee;
+    border-radius: 60% / 10%;
+    transform: translateY(-180px);
+    transition: .8s ease-in-out;
+}
+
+.login label{
+    color: #9b5179;
+    transform: scale(.6);
+}
+
+#chk:checked ~ .login{
+    transform: translateY(-500px);
+}
+
+#chk:checked ~ .login label {
+    transform: scale(1);
+    transform: translateY(20px);
+}
+
+#chk:checked ~ .logo label{
+    transform: scale(.6);
+    transform: translateY(-45px);
+}
+
+  /* @media screen and (max-width: 375px) {
+    .tbl-biru {
+        padding: 10px 15px 10px 15px;
+    }
+  } */

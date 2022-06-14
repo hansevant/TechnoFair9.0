@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" style="width:100%;height:100%;content-visibility:visible">
+<style>
+    svg{
+        animation: swing 2s infinite;
+    }
+
+    @keyframes swing{
+        0%{
+            transform: rotate(0deg);
+        }
+        45%{
+            transform: rotate(-10deg);
+        }
+        90%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(0deg);
+        }
+    }
+</style>
+<defs><clipPath id="a"><path d="M0 0h500v500H0z"/></clipPath></defs><g display="block" clip-path="url(#a)"><path stroke-linecap="round" stroke-linejoin="round" stroke="#F6F5F6" stroke-width="12.04" d="M90.38 352.23h286.03c18.82 0 34.21-15.4 34.21-34.21V182.98c0-18.815-15.395-34.21-34.21-34.21H90.38" fill="none"/><path stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="15 40" stroke="#F6F5F6" stroke-width="12.04" d="M315.834 148.77v203.46" fill="none"/><path stroke-linecap="round" stroke-linejoin="round" stroke="#FC5285" stroke-width="12.04" d="M153.49 210.334h106.746M153.49 250.5h106.746M153.49 290.666h106.746" fill="none"/><g><path stroke-linecap="round" stroke-linejoin="round" stroke="#F6F5F6" stroke-width="12.04" d="M90.381 148.77l20 33.908-20 33.908 20 33.909-20 33.909 20 33.913-20 33.913" fill="none"/></g></g></svg>

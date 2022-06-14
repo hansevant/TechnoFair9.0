@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oops :(</title>
+    <link href="assets/img/logo/logo.png" rel="icon">
+    <link href="assets/img/logo/logo.png" rel="apple-touch-icon">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'teks';
+        }
+
+        @font-face {
+        font-family: 'title';
+        /*memberikan nama bebas untuk font*/
+        src: url('assets/font/JTMarnie-Medium.otf');
+        /*memanggil file font eksternalnya di folder nexa*/
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+
+        #hero {
+            background: url(assets/img/regist.png);
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+        }
+
+        a{
+            text-decoration: none;
+            color: #fC5286;
+            background-color:#37506c;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        h2{
+            font-family: 'title';
+            color:#37506c;
+        }
+
+        a{
+            font-family: 'title';
+        }
+
+        @media (max-width:1200px) {
+            h2 {
+                width: 500px;
+            }
+        }
+
+        @media (max-width:768px) {
+            h2 {
+                width: 400px;
+            }
+        }
+
+        @media (max-width:425px) {
+            h2 {
+                width: 200px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <section id="hero">
+        <center>
+            <img src="assets/img/maskot/Asset 24.png" width="250"
+                style="margin-top: 50px;max-width:100%; height: auto;">
+            <br> <br>
+            <h2 style="line-height: 1.3;">Maaf pendaftaran belum dibuka...</h4>
+                <br>
+                <a href="javascript:window.history.go(-1);">KEMBALI</a>
+        </center>
+    </section>
+</body>
+
+</html>
