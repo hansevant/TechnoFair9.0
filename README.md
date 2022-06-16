@@ -13,3 +13,6 @@ Instalation
 2. import the database
 
 3. setup the config connection db
+
+
+size = 50mb+
