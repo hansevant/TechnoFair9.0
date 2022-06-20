@@ -16,3 +16,9 @@ Instalation
 
 
 size = 50mb+
+
+___
+admin credentials
+
+username : admin
+password : tf9lancar
