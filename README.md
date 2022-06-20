@@ -14,11 +14,11 @@ Instalation
 
 3. setup the config connection db
 
-
 size = 50mb+
 
-___
+---
+
 admin credentials
 
-username : admin
+username : admin <br>
 password : tf9lancar
