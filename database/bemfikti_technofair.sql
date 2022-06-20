@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.7
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost:3306
--- Generation Time: Jun 15, 2022 at 02:41 AM
--- Server version: 10.3.35-MariaDB
--- PHP Version: 7.4.29
+-- Host: 127.0.0.1
+-- Generation Time: Jun 20, 2022 at 08:40 PM
+-- Server version: 10.4.24-MariaDB
+-- PHP Version: 8.1.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -19,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `technof4_tf9`
+-- Database: `bemfikti_technofair`
 --
 
 -- --------------------------------------------------------
@@ -44,6 +43,8 @@ CREATE TABLE `acc_user` (
 -- Dumping data for table `acc_user`
 --
 
+INSERT INTO `acc_user` (`id_user`, `id_comp`, `nama_tim`, `username`, `password`, `instansi`, `stat_acc`, `stat_final`, `forgot_pass`) VALUES
+(1, 2, 'test', 'test', '*D95B9BCB49A61B63DCDB784718FAE78FC7852D28', 'test', 0, 0, 1);
 
 -- --------------------------------------------------------
 
@@ -101,11 +102,6 @@ CREATE TABLE `user_anggota` (
   `nohp_anggota` varchar(15) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Dumping data for table `user_anggota`
---
-
-
 -- --------------------------------------------------------
 
 --
@@ -123,6 +119,8 @@ CREATE TABLE `user_berkas` (
 -- Dumping data for table `user_berkas`
 --
 
+INSERT INTO `user_berkas` (`id_berkas`, `id_user`, `berkas`, `stat_berkas`) VALUES
+(1, 1, NULL, 0);
 
 -- --------------------------------------------------------
 
@@ -141,10 +139,6 @@ CREATE TABLE `user_ketua` (
   `email_ketua` varchar(150) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Dumping data for table `user_ketua`
---
-
 -- --------------------------------------------------------
 
 --
@@ -162,6 +156,8 @@ CREATE TABLE `user_payment` (
 -- Dumping data for table `user_payment`
 --
 
+INSERT INTO `user_payment` (`id_payment`, `id_user`, `payment`, `stat_payment`) VALUES
+(1, 1, NULL, 0);
 
 -- --------------------------------------------------------
 
@@ -180,10 +176,6 @@ CREATE TABLE `webinar` (
   `email` varchar(99) NOT NULL,
   `event` varchar(99) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `webinar`
---
 
 -- --------------------------------------------------------
 
@@ -204,10 +196,6 @@ CREATE TABLE `workshop` (
   `payment` varchar(255) NOT NULL,
   `stat_payment` int(2) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `workshop`
---
 
 --
 -- Indexes for dumped tables
@@ -287,37 +275,37 @@ ALTER TABLE `competition`
 -- AUTO_INCREMENT for table `user_anggota`
 --
 ALTER TABLE `user_anggota`
-  MODIFY `id_anggota` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=79;
+  MODIFY `id_anggota` int(3) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `user_berkas`
 --
 ALTER TABLE `user_berkas`
-  MODIFY `id_berkas` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=86;
+  MODIFY `id_berkas` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `user_ketua`
 --
 ALTER TABLE `user_ketua`
-  MODIFY `id_ketua` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
+  MODIFY `id_ketua` int(3) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `user_payment`
 --
 ALTER TABLE `user_payment`
-  MODIFY `id_payment` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=86;
+  MODIFY `id_payment` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `webinar`
 --
 ALTER TABLE `webinar`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=256;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `workshop`
 --
 ALTER TABLE `workshop`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- Constraints for dumped tables

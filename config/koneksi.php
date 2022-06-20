@@ -3,7 +3,7 @@
 $host = "localhost";
 $user = "root";
 $pass = "";
-$db   = "technof4_tf9";
+$db   = "bemfikti_technofair";
 
 $con = mysqli_connect($host, $user, $pass, $db) or die("koneksi gagal");
 
